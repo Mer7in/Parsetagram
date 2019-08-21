@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/ic_bg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="231dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/lobster"
+        android:lineSpacingExtra="8sp"
+        android:padding="7dp"
+        android:text="Instagram"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="44sp"
+        android:typeface="monospace"
+        tools:ignore="@string/app_name"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="99dp"
+        tools:text="Instagram" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:background="#FFE0E9"
+        android:padding="15dp"
+
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="283dp"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="358dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="#FFE0E9"
+
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFE0E9"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="330dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:backgroundTintMode="screen"
+        android:text="Log In"
+        android:padding="0dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="330dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFF"
+        android:text="Forgot your login details?  Get help signin in."
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="350dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:foreground="#fdd"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>
